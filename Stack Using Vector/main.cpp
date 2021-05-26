@@ -1,5 +1,4 @@
 // By Biraj Raj Thapa
-
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -54,3 +53,5 @@ int main ()
 	assignment.push_data();
 	assignment.pop_data();
 	assignment.isfull();
+	assignment.Peek();
+}
