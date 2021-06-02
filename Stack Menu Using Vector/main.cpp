@@ -1,7 +1,7 @@
 // By Biraj Raj Thapa
 #include <iostream>
 #include <vector>
-#define MAX 5
+#define MAX 5 
 using namespace std;
 class stack
 {
@@ -29,16 +29,20 @@ class stack
 	 
 	  void Display ()
 	  {
+	     
+	      if (!data.empty())
+	      {
 	      cout << "The Stack is.. \n";
 	 
-    for(int i; i < data.size(); i++)
-    {
+             for(int i; i < data.size(); i++)
+                 {
         
-        cout << data[i] << "\n";
-    }
-    cout << "\n" << endl;
-	  } 
-        
+                     cout << data[i] << "\n";
+                 }
+	      }
+	  else 
+	    cout << "Stack is empty..\n";
+}    
 
 };
 int main ()
@@ -66,3 +70,4 @@ int main ()
 		cout << "Wrong choice";	
 	}
  }
+}
