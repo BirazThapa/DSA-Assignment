@@ -1,6 +1,7 @@
 // By Biraj Raj Thapa
 #include <iostream>
 #include <vector>
+#include <algorithm>
 #define MAX 5 
 using namespace std;
 class stack
@@ -23,6 +24,7 @@ class stack
 	 
 	 void Pop ()
 	 {
+	     reverse( data.begin(), data.end() );
 	 	data.pop_back();
 
 	 }
@@ -32,6 +34,7 @@ class stack
 	     
 	      if (!data.empty())
 	      {
+	          reverse( data.begin(), data.end() );
 	      cout << "The Stack is.. \n";
 	 
              for(int i; i < data.size(); i++)
